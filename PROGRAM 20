@@ -1,0 +1,15 @@
+import java.util.*;
+class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner (System.in);
+	    int d=sc.nextInt();
+	    char ch=sc.next().charAt(0);
+	    float a=sc.nextFloat();
+	    double b=sc.nextDouble();
+	    System.out.println(Integer.BYTES);
+	    System.out.println(Character.BYTES);
+	    System.out.println(Float.BYTES);
+	    System.out.println(Double.BYTES);
+	}
+}
