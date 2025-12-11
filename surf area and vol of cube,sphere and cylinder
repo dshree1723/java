@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+        double a=sc.nextDouble();
+        double r=sc.nextDouble();
+        double h=sc.nextDouble();
+        double csa=6*a*a;
+        double cvol=a*a*a;
+        double ssa=4*3.14*r*r;
+        double svol=(4*3.14*r*r*r)/3;
+        double cycsa=2*3.14*r*h;
+        double cytsa=2*3.14*r*(r+h);
+        double cyvol=3.14*r*r*h;
+        System.out.println(csa+"\n"+cvol+"\n"+ssa+"\n"+svol+"\n"+cycsa+"\n"+cytsa+"\n"+cyvol);
+	}
+}
