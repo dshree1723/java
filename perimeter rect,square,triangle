@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+        double length=sc.nextDouble();
+        double breadth=sc.nextDouble();
+        double side=sc.nextDouble();
+        double side1=sc.nextDouble();
+        double side2=sc.nextDouble();
+        double perimeterrect=2*(length+breadth);
+        double perimetersquare=4*side;
+        double perimetertriangle=side+side1+side2;
+        System.out.println(perimeterrect+"\n"+perimetersquare+"\n"+perimetertriangle);
+	}
+}
