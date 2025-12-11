@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+        double a=sc.nextDouble();
+        double cubesa=6*a*a;
+        double cubevol=a*a*a;
+        double cubeperimeter=12*a;
+        System.out.println(cubesa+"\n"+cubevol+"\n"+cubeperimeter);
+	}
+}
