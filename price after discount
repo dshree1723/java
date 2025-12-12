@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		double ori_p=sc.nextDouble();
+		double dis_per=sc.nextDouble();
+		double dis_amount=(ori_p*dis_per)/100;
+		double finalprice=ori_p-dis_amount;
+		System.out.println(finalprice);
+	}
+}
