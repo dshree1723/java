@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int pricepermango=sc.nextInt();
+		int totalmango=sc.nextInt();
+		int set=totalmango/4;
+		int leftover=totalmango%4;
+		int paidmango=set*3;
+		int totalpaidmango=leftover+paidmango;
+		int totalamount=totalpaidmango*pricepermango;
+		System.out.println(totalamount);
+	}
+}
