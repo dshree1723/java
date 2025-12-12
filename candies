@@ -1,0 +1,12 @@
+import java .util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int totalcandies=sc.nextInt();
+		int totalperson=sc.nextInt();
+		int perperson=totalcandies/totalperson;
+		int remaincand=totalcandies%totalperson;
+		System.out.println(perperson+"\n"+remaincand);
+	}
+}
