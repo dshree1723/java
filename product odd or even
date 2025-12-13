@@ -9,7 +9,7 @@ public class Main
         if(c>0){
         System.out.println("positive");}
         else if(c<0){
-            System.out.println("nrgative");}
+            System.out.println("negative");}
         else{
             System.out.println("zero");}
 	}
