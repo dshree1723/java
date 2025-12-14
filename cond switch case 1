@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		double bill=sc.nextDouble();
+		double disc=0;
+		if(bill>=5000){
+		    disc=bill*0.20;
+		}
+		else if(bill>=2000){
+		    disc=bill*0.15;
+		}
+		else if(bill>=1000){
+		    disc=bill*0.10;
+		}
+		else{
+		    System.out.println("no discount");
+		}
+		double finalamount=bill-disc;
+		System.out.println(disc+"\n"+finalamount);
+	}
+}
