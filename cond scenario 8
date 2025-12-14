@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	     int pin=sc.nextInt();
+	     int enterpin=sc.nextInt();
+	     if(pin==enterpin){
+	         System.out.println("pin verified");
+	     }
+	     else{
+	         System.out.println("invalid pin");
+	     }
+	}     
+}
