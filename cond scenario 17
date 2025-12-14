@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	     String day=sc.next();
+	     if(day.equalsIgnoreCase("Saturday") || day.equalsIgnoreCase("Sunday")){
+	         System.out.println("weekend price 200");
+	     }
+	     else{
+	         System.out.println("weekday price 120");
+	     }
+	}
+}
