@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int evenc=0;
+		int oddc=0;
+		while(n>0){
+		    int digit=n%10;
+		    if(digit%2==0)
+		    evenc++;
+		    else
+		    oddc++;
+		    n/=10;
+		}
+		if(evenc>0&&oddc==0){
+		    System.out.println("all digits are even");
+		}else if(oddc>0&&evenc==0){
+		    System.out.println("all digits are odd");
+		}else{
+		    System.out.println("mixed digits");
+		}
+	}
+}
