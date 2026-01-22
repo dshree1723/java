@@ -1,0 +1,47 @@
+import java.util.*;
+class Node{
+    int data;
+    Node addr;
+    Node(int val){
+        data=val;
+        addr=null;
+    }
+}
+class LinkedList{
+    Node head;
+    LinkedList(){
+        head=null;
+    }
+    void insertAtBeginning(int val){
+        Node newNode=new Node(val);
+        newNode.data=val;
+        newNode.addr=null;
+        newNode.addr=head;
+        head=newNode;
+}
+    void display(){
+        if(head==null){
+            System.out.println("linked list is empty");
+            return;
+        }
+        Node temp=head;
+        while(temp!=null){
+            System.out.println(temp.data+" ");
+            temp=temp.addr;
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        LinkedList list=new LinkedList();
+        int val;
+        do{
+            val=sc.nextInt();
+            if(val!=-1){
+                list.insertAtBeginning(val);
+            }
+        }while(val!=-1);
+            list.display();
+    }
+}
